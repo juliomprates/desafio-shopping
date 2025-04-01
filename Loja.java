@@ -48,6 +48,10 @@ public class Loja {
     }
     
 
-
+    public double gastosComSalario() {
+        if (salarioBaseFuncionario != -1) {
+            return salarioBaseFuncionario * qtdDeFuncionarios;
+        } else return -1;
+    }
 
 }
