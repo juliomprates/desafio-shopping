@@ -41,6 +41,11 @@ public class Loja {
         this.salarioBaseFuncionario = _salarioBaseFuncionario;
     }
 
+    // formatação legível dos atributos da classe
+    public String toString (){
+        return "Loja {nome: "+nome+", Quantidade de Funcionários: "+qtdDeFuncionarios+
+                ", Salário Base dos Funcionários: "+salarioBaseFuncionario;
+    }
     
 
 
