@@ -54,4 +54,12 @@ public class Loja {
         } else return -1;
     }
 
+    public char tamanhoDaLoja() {
+        if (qtdDeFuncionarios >= 31) {
+            return 'G'; // Grande
+        } else if (qtdDeFuncionarios >= 10 && qtdDeFuncionarios <= 30) {
+            return 'M'; // Média
+        } else return 'P'; //Pequena
+    }
+
 }
