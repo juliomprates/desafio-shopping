@@ -6,4 +6,30 @@ public class Data {
         this.mes = _mes;
         this.ano = _ano;
     }
+
+    // getters
+    public int getDia() {
+        return dia;
+    }
+
+    public int getMes() {
+        return mes;
+    }
+
+    public int getAno() {
+        return ano;
+    }
+
+    // setters
+    public void setDia(int _dia) {
+        this.dia = _dia;
+    }
+
+    public void setMes(int _mes) {
+        this.mes = _mes;
+    }
+
+    public void setAno(int _ano) {
+        this.ano = _ano;
+    }
 }
