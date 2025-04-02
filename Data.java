@@ -117,4 +117,17 @@ public class Data {
     public String toString() {
         return "Data { Dia: "+dia+", Mês: "+mes+", Ano: "+ano+" }";
     }
+
+    public String formatada(){
+        if((dia < 10) && (mes < 10)){
+            return "Data: 0"+dia+"/0"+mes+"/"+ano;
+        } else if (dia < 10) {
+            return "Data: 0"+dia+"/"+mes+"/"+ano;
+        } else if (mes < 10) {
+            return "Data: "+dia+"/0"+mes+"/"+ano;
+        } else {
+            return "Data: "+dia+"/"+mes+"/"+ano;
+        }
+    }
+
 }
