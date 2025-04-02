@@ -7,4 +7,24 @@ public class Produto {
         this.preco = _preco;
     }
 
+    // getters
+    public String getNome() {
+        return nome;
+    }
+
+    public double getPreco() {
+        return preco;
+    }
+
+    //setters
+    public void setNome(String _nome) {
+        this.nome = _nome;
+    }
+
+    public void setPreco(double _preco) {
+        this.preco = _preco;
+    }
+
+
+    
 }
