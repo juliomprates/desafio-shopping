@@ -25,6 +25,8 @@ public class Produto {
         this.preco = _preco;
     }
 
-
+    public String toString(){
+        return "Produto { Nome: "+nome+", Preço: "+preco+" }";
+    }
     
 }
