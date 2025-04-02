@@ -130,7 +130,7 @@ public class Data {
         }
     }
 
-    public boolean ehBissexto(){
+    public boolean verificaAnoBissexto(){
         return ((ano % 4 == 0 && ano % 100 != 0) || (ano % 400 == 0));
     }
 }
