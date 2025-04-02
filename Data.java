@@ -32,4 +32,8 @@ public class Data {
     public void setAno(int _ano) {
         this.ano = _ano;
     }
+
+    public String toString() {
+        return "Data { Dia: "+dia+", Mês: "+mes+", Ano: "+ano+" }";
+    }
 }
