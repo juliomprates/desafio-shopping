@@ -38,4 +38,25 @@ public class Produto {
     public String toString(){
         return "Produto { Nome: "+nome+", Preço: "+preco+", Validade: "+validade+" }";
     }
+
+    public boolean estaVencido(Data data){
+        boolean anoEhIgual = data.getAno() == validade.getAno();
+        boolean anoEhMenor = data.getAno() < validade.getAno();
+
+        if (anoEhIgual) {
+            if (data.getMes() > validade.getMes()) {
+                return true;
+            } else if ((data.getDia() > validade.getDia()) && (data.getMes() >= validade.getMes())){
+                return true;
+            } else return false;
+        }
+
+        // caso óbvio -> ano é menor que o ano de validade
+        if (anoEhMenor) {
+            return false;
+        }
+
+        // caso óbvio -> ano é maior que ano de validade
+        return true;
+    }
 }
