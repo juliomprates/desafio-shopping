@@ -36,7 +36,7 @@ public class Produto {
     }
 
     public String toString(){
-        return "Produto { Nome: "+nome+", Preço: "+preco+", Validade: "+validade+" }";
+        return "Nome: "+nome+"\nPreço: "+preco+"\nValidade: "+validade;
     }
 
     public boolean estaVencido(Data data){
