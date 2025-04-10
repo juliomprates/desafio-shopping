@@ -72,7 +72,7 @@ public class Endereco {
     }
 
     public String toString() {
-        return "Ëndereço { Nome da Rua: "+nomeDaRua+", Cidade: "+cidade+", Estado: "+estado+
-                ", País: "+pais+", CEP: "+cep+", Número: "+numero+", Complemento: "+complemento+" }";
+        return "\nEndereço \nNome da Rua: "+nomeDaRua+"\nCidade: "+cidade+"\nEstado: "+estado+
+                "\nPaís: "+pais+"\nCEP: "+cep+"\nNúmero: "+numero+"\nComplemento: "+complemento+"\n";
     }
 }
