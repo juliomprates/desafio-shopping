@@ -66,9 +66,9 @@ public class Loja {
 
     // formatação legível dos atributos da classe
     public String toString (){
-        return "Loja { nome: "+nome+", Quantidade de Funcionários: "+qtdDeFuncionarios+
-                ", Salário Base dos Funcionários: "+salarioBaseFuncionario+",\n"+
-                endereco.toString()+",\nData de Fundação: "+dataDeFundacao.formatada();
+        return "\nNome: "+nome+"\nQuantidade de Funcionários: "+qtdDeFuncionarios+
+                "\nSalário Base dos Funcionários: "+salarioBaseFuncionario+"\n"+
+                endereco.toString()+"\nData de Fundação: "+dataDeFundacao.toString();
     }
     
 
