@@ -7,9 +7,14 @@ Esse projeto visa implementar um sistema de gerenciamento de lojas de um Shoppin
 Utilizando:
 
 - Conceitos de Programação Orientada a Objetos (POO ou OOP) com Java
+  - Atributos e Métodos
+  - Associação entre Classes (Composição)
+  - Herança e Polimorfismo
 
-Ao longo do semestre serei exposto a novos conhecimentos a respeito do paradigma de POO e consequentemente adicionando novas funcionalidades ao projeto.
+Ao longo do semestre serei exposto a novos conhecimentos a respeito do paradigma de POO e consequentemente adicionando 
+novas funcionalidades ao projeto.
 
 OBS:
 
-Unindo o útil ao agradável, vou utilizar o conhecimento que adquiri sobre controle de versão com Git e repositórios remotos, e ir documentando o processo do desenvolvimento desse desafio/projeto por aqui.
+Unindo o útil ao agradável, vou utilizar o conhecimento que adquiri sobre controle de versão com Git e repositórios 
+remotos, e ir documentando o processo do desenvolvimento desse desafio/projeto por aqui.
