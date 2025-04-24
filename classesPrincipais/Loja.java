@@ -1,6 +1,8 @@
+package classesPrincipais;
+
 public class Loja {
     private String nome;
-    private int qtdDeFuncionarios;
+    private int quantidadeFuncionario;
     private double salarioBaseFuncionario;
     private Endereco endereco;
     private Data dataDeFundacao;
@@ -8,7 +10,7 @@ public class Loja {
     public Loja (String _nome, int _qtdDeFuncionario, double _salarioBaseFuncionario, 
                  Endereco _endereco, Data _dataDeFundacao){
         this.nome = _nome;
-        this.qtdDeFuncionarios = _qtdDeFuncionario;
+        this.quantidadeFuncionario = _qtdDeFuncionario;
         this.salarioBaseFuncionario = _salarioBaseFuncionario;
         this.endereco = _endereco;
         this.dataDeFundacao = _dataDeFundacao;
@@ -16,7 +18,7 @@ public class Loja {
 
     public Loja (String _nome, int _qtdDeFuncionario, Endereco _endereco, Data _dataDeFundacao){
         this.nome = _nome;
-        this.qtdDeFuncionarios = _qtdDeFuncionario;
+        this.quantidadeFuncionario = _qtdDeFuncionario;
         this.salarioBaseFuncionario = -1;
         this.endereco = _endereco;
         this.dataDeFundacao = _dataDeFundacao;
@@ -27,8 +29,8 @@ public class Loja {
         return nome;
     }
     
-    public int getQtdDeFuncionarios(){
-        return qtdDeFuncionarios;
+    public int getQuantidadeFuncionario(){
+        return quantidadeFuncionario;
     }
     
     public double getSalarioBaseFuncionario(){
@@ -48,8 +50,8 @@ public class Loja {
         this.nome = _nome;
     }
 
-    public void setQtdDeFuncionarios(int _qtdDeFuncionarios) {
-        this.qtdDeFuncionarios = _qtdDeFuncionarios;
+    public void setQuantidadeFuncionario(int _qtdDeFuncionarios) {
+        this.quantidadeFuncionario = _qtdDeFuncionarios;
     }
 
     public void setSalarioBaseFuncionario(double _salarioBaseFuncionario) {
@@ -66,22 +68,22 @@ public class Loja {
 
     // formatação legível dos atributos da classe
     public String toString (){
-        return "\nNome: "+nome+"\nQuantidade de Funcionários: "+qtdDeFuncionarios+
+        return "\nNome: "+nome+"\nQuantidade de Funcionários: "+ quantidadeFuncionario +
                 "\nSalário Base dos Funcionários: "+salarioBaseFuncionario+"\n"+
-                endereco.toString()+"\nData de Fundação: "+dataDeFundacao.toString();
+                endereco.toString()+"\nclassesPrincipais.Data de Fundação: "+dataDeFundacao.toString();
     }
     
 
     public double gastosComSalario() {
         if (salarioBaseFuncionario != -1) {
-            return salarioBaseFuncionario * qtdDeFuncionarios;
+            return salarioBaseFuncionario * quantidadeFuncionario;
         } else return -1;
     }
 
     public char tamanhoDaLoja() {
-        if (qtdDeFuncionarios >= 31) {
+        if (quantidadeFuncionario >= 31) {
             return 'G'; // Grande
-        } else if (qtdDeFuncionarios >= 10 && qtdDeFuncionarios <= 30) {
+        } else if (quantidadeFuncionario >= 10 && quantidadeFuncionario <= 30) {
             return 'M'; // Média
         } else return 'P'; //Pequena
     }

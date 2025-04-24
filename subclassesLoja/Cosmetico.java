@@ -1,3 +1,5 @@
+package subclassesLoja;
+
 import classesPrincipais.Data;
 import classesPrincipais.Endereco;
 import classesPrincipais.Loja;

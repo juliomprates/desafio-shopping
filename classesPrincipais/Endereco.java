@@ -1,3 +1,5 @@
+package classesPrincipais;
+
 public class Endereco {
     private String nomeDaRua, cidade, estado, pais, cep, numero, complemento;
 
