@@ -1,8 +1,6 @@
 package subclassesLoja;
 
-import classesPrincipais.Data;
-import classesPrincipais.Endereco;
-import classesPrincipais.Loja;
+import classesPrincipais.*;
 
 public class Cosmetico extends Loja {
     private double taxaComercializacao;
