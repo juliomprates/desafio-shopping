@@ -12,7 +12,7 @@ public class Data {
         if (_dia >= 1 && _dia <= 31) {
             diaValido = true;
         } else {
-            /*classesPrincipais.Data Padrão */
+            /* Data Padrão */
             this.dia = 1;
             this.mes = 1;
             this.ano = 2000;
@@ -26,7 +26,7 @@ public class Data {
         if (_mes >= 1 && _mes <= 12) {
             mesValido = true;
         } else {
-            /*classesPrincipais.Data Padrão */
+            /* Data Padrão */
             this.dia = 1;
             this.mes = 1;
             this.ano = 2000;
@@ -54,7 +54,7 @@ public class Data {
         if (diaValido && mesValido) {
             if (_mes == 2) {
                 if (_dia > 28) {
-                    /* classesPrincipais.Data Padrão */
+                    /*  Data Padrão */
                     this.dia = 1;
                     this.mes = 1;
                     this.ano = 2000;
@@ -69,7 +69,7 @@ public class Data {
         if (diaValido && mesValido) {  // true true
             if (_dia == 31) { // true
                 if ((_mes == 2) || (_mes == 4) || (_mes == 6) || (_mes == 9) || (_mes == 11)) { 
-                    /* classesPrincipais.Data Padrão */
+                    /*  Data Padrão */
                     this.dia = 1;
                     this.mes = 1;
                     this.ano = 2000;
