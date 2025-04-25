@@ -26,9 +26,6 @@ public class Cosmetico extends Loja {
     }
 
     public String toString(){
-        return "\nNome: "+this.getNome()+"\nQuantidade de Funcionários: "+this.getQuantidadeFuncionario()+
-                "\nSalário Base dos Funcionários: "+this.getSalarioBaseFuncionario()+"\n"+
-                this.getEndereco().toString()+"\nData de Fundação: "+this.getDataDeFundacao().toString()+
-                "\nTaxa de Comercialização: R$"+this.getTaxaComercializacao();
+        return super.toString()+"\nTaxa de Comercialização: R$"+this.getTaxaComercializacao();
     }
 }
