@@ -3,7 +3,7 @@ package subclassesLoja;
 import classesPrincipais.*;
 
 public class Vestuario extends Loja {
-    boolean produtosImportados = false;
+    private boolean produtosImportados = false;
 
     public Vestuario(String _nome, int _qtdDeFuncionario, double _salarioBaseFuncionario,
                      Endereco _endereco, Data _dataDeFundacao, boolean produtosImportados)
