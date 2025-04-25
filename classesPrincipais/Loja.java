@@ -70,7 +70,7 @@ public class Loja {
     public String toString (){
         return "\nNome: "+nome+"\nQuantidade de Funcionários: "+ quantidadeFuncionario +
                 "\nSalário Base dos Funcionários: "+salarioBaseFuncionario+"\n"+
-                endereco.toString()+"\nclassesPrincipais.Data de Fundação: "+dataDeFundacao.toString();
+                endereco.toString()+"\nData de Fundação: "+dataDeFundacao.toString();
     }
     
 
