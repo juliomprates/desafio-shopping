@@ -1,3 +1,5 @@
+import classesPrincipais.*;
+import subclassesLoja.*;
 import java.util.Scanner;
 
 public class Main {
