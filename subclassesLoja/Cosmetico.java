@@ -5,14 +5,14 @@ import classesPrincipais.*;
 public class Cosmetico extends Loja {
     private double taxaComercializacao;
 
-    public Cosmetico(String _nome, int _quantidadeFuncionario, double _salarioBaseFuncionario,
-                     Endereco _endereco, Data _dataDeFundacao) {
-        super(_nome, _quantidadeFuncionario, _salarioBaseFuncionario, _endereco, _dataDeFundacao);
+    public Cosmetico(String nome, int quantidadeFuncionario, double salarioBaseFuncionario,
+                     Endereco endereco, Data dataDeFundacao) {
+        super(nome, quantidadeFuncionario, salarioBaseFuncionario, endereco, dataDeFundacao);
         this.setTaxaComercializacao(-1);
     }
 
-    public Cosmetico(String _nome, int _quantidadeFuncionario, Endereco _endereco, Data _dataDeFundacao){
-        super(_nome, _quantidadeFuncionario, _endereco, _dataDeFundacao);
+    public Cosmetico(String nome, int quantidadeFuncionario, Endereco endereco, Data dataDeFundacao){
+        super(nome, quantidadeFuncionario, endereco, dataDeFundacao);
         this.setSalarioBaseFuncionario(-1);
         this.setTaxaComercializacao(-1);
     }

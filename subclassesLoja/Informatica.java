@@ -5,9 +5,9 @@ import classesPrincipais.*;
 public class Informatica extends Loja {
     private double seguroEletronicos;
 
-    public Informatica(String _nome, int _qtdDeFuncionario, double _salarioBaseFuncionario,
-                       Endereco _endereco, Data _dataDeFundacao, double seguroEletronicos) {
-        super(_nome, _qtdDeFuncionario, _salarioBaseFuncionario, _endereco, _dataDeFundacao);
+    public Informatica(String nome, int quantidadeFuncionario, double salarioBaseFuncionario,
+                       Endereco endereco, Data dataDeFundacao, double seguroEletronicos) {
+        super(nome, quantidadeFuncionario, salarioBaseFuncionario, endereco, dataDeFundacao);
         this.seguroEletronicos = seguroEletronicos;
     }
 

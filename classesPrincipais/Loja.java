@@ -7,21 +7,21 @@ public class Loja {
     private Endereco endereco;
     private Data dataDeFundacao;
 
-    public Loja (String _nome, int _qtdDeFuncionario, double _salarioBaseFuncionario, 
-                 Endereco _endereco, Data _dataDeFundacao){
-        this.nome = _nome;
-        this.quantidadeFuncionario = _qtdDeFuncionario;
-        this.salarioBaseFuncionario = _salarioBaseFuncionario;
-        this.endereco = _endereco;
-        this.dataDeFundacao = _dataDeFundacao;
+    public Loja (String nome, int quantidadeFuncionario, double salarioBaseFuncionario,
+                 Endereco endereco, Data dataDeFundacao){
+        this.nome = nome;
+        this.quantidadeFuncionario = quantidadeFuncionario;
+        this.salarioBaseFuncionario = salarioBaseFuncionario;
+        this.endereco = endereco;
+        this.dataDeFundacao = dataDeFundacao;
     }
 
-    public Loja (String _nome, int _qtdDeFuncionario, Endereco _endereco, Data _dataDeFundacao){
-        this.nome = _nome;
-        this.quantidadeFuncionario = _qtdDeFuncionario;
+    public Loja (String nome, int quantidadeFuncionario, Endereco endereco, Data dataDeFundacao){
+        this.nome = nome;
+        this.quantidadeFuncionario = quantidadeFuncionario;
         this.salarioBaseFuncionario = -1;
-        this.endereco = _endereco;
-        this.dataDeFundacao = _dataDeFundacao;
+        this.endereco = endereco;
+        this.dataDeFundacao = dataDeFundacao;
     }
 
     // getters
@@ -46,24 +46,24 @@ public class Loja {
     }
 
     // setters
-    public void setNome(String _nome) {
-        this.nome = _nome;
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 
-    public void setQuantidadeFuncionario(int _qtdDeFuncionarios) {
-        this.quantidadeFuncionario = _qtdDeFuncionarios;
+    public void setQuantidadeFuncionario(int quantidadeFuncionario) {
+        this.quantidadeFuncionario = quantidadeFuncionario;
     }
 
-    public void setSalarioBaseFuncionario(double _salarioBaseFuncionario) {
-        this.salarioBaseFuncionario = _salarioBaseFuncionario;
+    public void setSalarioBaseFuncionario(double salarioBaseFuncionario) {
+        this.salarioBaseFuncionario = salarioBaseFuncionario;
     }
 
-    public void setEndereco(Endereco _endereco){
-        this.endereco = _endereco;
+    public void setEndereco(Endereco endereco){
+        this.endereco = endereco;
     }
 
-    public void setDataDeFundacao(Data _dataDeFundacao){
-        this.dataDeFundacao = _dataDeFundacao;
+    public void setDataDeFundacao(Data dataDeFundacao){
+        this.dataDeFundacao = dataDeFundacao;
     }
 
     // formatação legível dos atributos da classe

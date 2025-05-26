@@ -5,10 +5,10 @@ public class Produto {
     private double preco;
     private Data validade;
 
-    public Produto(String _nome, double _preco, Data _validade) {
-        this.nome = _nome;
-        this.preco = _preco;
-        this.validade = _validade;
+    public Produto(String nome, double preco, Data validade) {
+        this.nome = nome;
+        this.preco = preco;
+        this.validade = validade;
     }
 
     // getters
@@ -25,16 +25,16 @@ public class Produto {
     }
 
     //setters
-    public void setNome(String _nome) {
-        this.nome = _nome;
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 
-    public void setPreco(double _preco) {
-        this.preco = _preco;
+    public void setPreco(double preco) {
+        this.preco = preco;
     }
 
-    public void setValidade(Data _validade) {
-        this.validade = _validade;
+    public void setValidade(Data validade) {
+        this.validade = validade;
     }
 
     public String toString(){

@@ -3,16 +3,16 @@ package classesPrincipais;
 public class Endereco {
     private String nomeDaRua, cidade, estado, pais, cep, numero, complemento;
 
-    public Endereco(String _nomeDaRua, String _cidade, String _estado, String _pais, 
-                    String _cep, String _numero, String _complemento) {
+    public Endereco(String nomeDaRua, String cidade, String estado, String pais,
+                    String cep, String numero, String complemento) {
 
-            this.nomeDaRua = _nomeDaRua;
-            this.cidade = _cidade;
-            this.estado = _estado;
-            this.pais = _pais;
-            this.cep = _cep;
-            this.numero = _numero;
-            this.complemento = _complemento;
+            this.nomeDaRua = nomeDaRua;
+            this.cidade = cidade;
+            this.estado = estado;
+            this.pais = pais;
+            this.cep = cep;
+            this.numero = numero;
+            this.complemento = complemento;
         }
     
     // getters
@@ -45,32 +45,32 @@ public class Endereco {
     }
     
     // setters
-    public void setNomeDaRua(String _nomeDaRua) {
-        this.nomeDaRua = _nomeDaRua;
+    public void setNomeDaRua(String nomeDaRua) {
+        this.nomeDaRua = nomeDaRua;
     }
 
-    public void setCidade(String _cidade) {
-        this.cidade = _cidade;
+    public void setCidade(String cidade) {
+        this.cidade = cidade;
     }
 
-    public void setEstado(String _estado) {
-        this.estado = _estado;
+    public void setEstado(String estado) {
+        this.estado = estado;
     }
 
-    public void setPais(String _pais) {
-        this.pais = _pais;
+    public void setPais(String pais) {
+        this.pais = pais;
     }
 
-    public void setCep(String _cep) {
-        this.cep = _cep;
+    public void setCep(String cep) {
+        this.cep = cep;
     }
 
-    public void setNumero(String _numero) {
-        this.numero = _numero;
+    public void setNumero(String numero) {
+        this.numero = numero;
     }
 
-    public void setComplemento(String _complemento) {
-        this.complemento = _complemento;
+    public void setComplemento(String complemento) {
+        this.complemento = complemento;
     }
 
     public String toString() {
