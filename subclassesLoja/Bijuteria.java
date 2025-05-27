@@ -22,6 +22,6 @@ public class Bijuteria extends Loja {
     @Override
     public String toString(){
         return super.toString() +
-                "\nMeta de Vendas: R$"+getMetaVendas();
+                "\nMeta de Vendas: R$"+metaVendas;
     }
 }

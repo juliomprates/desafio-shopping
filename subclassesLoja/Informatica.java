@@ -22,6 +22,6 @@ public class Informatica extends Loja {
     @Override
     public String toString() {
         return super.toString() +
-                "\nValor do Seguro: R$"+getSeguroEletronicos();
+                "\nValor do Seguro: R$"+seguroEletronicos;
     }
 }

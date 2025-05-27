@@ -26,6 +26,7 @@ public class Cosmetico extends Loja {
     }
 
     public String toString(){
-        return super.toString()+"\nTaxa de Comercialização: R$"+this.getTaxaComercializacao();
+        return super.toString() +
+                "\nTaxa de Comercialização: R$"+taxaComercializacao;
     }
 }
