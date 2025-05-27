@@ -23,8 +23,8 @@ public class Main {
                 break;
             }
 
-            if (opcao != 1 && opcao != 2 && opcao != 3) {
-                System.out.println("Operaçao inválida");
+            if (opcao != 1 && opcao != 2) {
+                System.out.println("Operação inválida");
                 System.out.print("Por favor, insira uma nova operação: ");
                 opcao = Integer.parseInt(teclado.nextLine());
             }
@@ -98,7 +98,7 @@ public class Main {
                 System.out.println("\nLoja criada com sucesso!");
                 System.out.println("-----------------------------------");
                 System.out.println("\tInformações da Loja");
-                System.out.println(novaLoja.toString());
+                System.out.println(novaLoja);
                 System.out.println("-----------------------------------");
             }
 
@@ -138,7 +138,7 @@ public class Main {
                 System.out.println("\nProduto criado com sucesso!");
                 System.out.println("-----------------------------------");
                 System.out.println("\tInformações do Produto\n");
-                System.out.println(novoProduto.toString());
+                System.out.println(novoProduto);
                 // dia atual como parâmetro para checar se o produto está na validade
                 if (novoProduto.estaVencido(new Data(9, 4, 2025))) {
                     System.out.println("\n\tPRODUTO VENCIDO");
