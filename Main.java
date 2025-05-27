@@ -89,7 +89,10 @@ public class Main {
 
                 dataDeFundacao = new Data(dia, mes, ano);
 
-                novaLoja = new Loja(nome, qtdDeFuncionarios, salarioBaseFuncionario, endereco, dataDeFundacao);
+                System.out.print("\nQuantidade máxima de produtos do estoque: ");
+                int quantidadeMaxProdutos = Integer.parseInt(teclado.nextLine());
+
+                novaLoja = new Loja(nome, qtdDeFuncionarios, salarioBaseFuncionario, endereco, dataDeFundacao, quantidadeMaxProdutos);
                 System.out.println("\nLoja criada com sucesso!");
                 System.out.println("-----------------------------------");
                 System.out.println("\tInformações da Loja");
@@ -131,7 +134,6 @@ public class Main {
                 System.out.println("-----------------------------------");
                 System.out.println("\tInformações do Produto\n");
                 System.out.println(novoProduto);
-
                 // dia atual adicionado manualmente
                 if (novoProduto.estaVencido(new Data(9, 4, 2025))) {
                     System.out.println("\n\tPRODUTO VENCIDO");
