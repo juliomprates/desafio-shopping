@@ -27,7 +27,6 @@ public class Loja {
         this.estoqueProdutos = new Produto[quantidadeMaxProdutos];
     }
 
-    // getters
     public String getNome(){
         return nome;
     }
@@ -50,7 +49,6 @@ public class Loja {
 
     public Produto[] getEstoqueProdutos() { return estoqueProdutos; }
 
-    // setters
     public void setNome(String nome) {
         this.nome = nome;
     }
@@ -71,13 +69,11 @@ public class Loja {
         this.dataDeFundacao = dataDeFundacao;
     }
 
-    // formatação legível dos atributos da classe
     public String toString (){
         return "\nNome: "+nome+"\nQuantidade de Funcionários: "+ quantidadeFuncionario +
                 "\nSalário Base dos Funcionários: "+salarioBaseFuncionario+"\n"+
                 endereco+"\nData de Fundação: "+dataDeFundacao;
     }
-    
 
     public double gastosComSalario() {
         if (salarioBaseFuncionario != -1) {
