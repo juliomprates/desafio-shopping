@@ -30,15 +30,15 @@ public class Loja {
     public String getNome(){
         return nome;
     }
-    
+
     public int getQuantidadeFuncionario(){
         return quantidadeFuncionario;
     }
-    
+
     public double getSalarioBaseFuncionario(){
         return salarioBaseFuncionario;
     }
-    
+
     public Endereco getEndereco(){
         return endereco;
     }
@@ -94,9 +94,13 @@ public class Loja {
     }
 
     public String toString (){
-        return "\nNome: "+nome+"\nQuantidade de Funcionários: "+ quantidadeFuncionario +
-                "\nSalário Base dos Funcionários: "+salarioBaseFuncionario+"\n"+
-                endereco+"\nData de Fundação: "+dataDeFundacao;
+        return "\nNome: " + nome +
+                "\nQuantidade de Funcionários: " +quantidadeFuncionario +
+                "\nSalário Base dos Funcionários: " + salarioBaseFuncionario +
+                "\n=======================================" +
+                "\n\n" + endereco +
+                "\n=======================================" +
+                "\n\nData de Fundação: "+dataDeFundacao;
     }
 
     public double gastosComSalario() {
