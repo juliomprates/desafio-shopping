@@ -6,10 +6,16 @@ Esse projeto visa implementar um sistema de gerenciamento de lojas de um Shoppin
 
 Utilizando:
 
-- Conceitos de Programação Orientada a Objetos (POO ou OOP) com Java
+- Conceitos do paradigma de Programação Orientada a Objetos: 
   - Atributos e Métodos
   - Associação entre Classes (Composição)
+
+- Os 4 Pilares da Programação Orientada a Objetos:
+  - Abstração
+  - Encapsulamento
   - Herança e Polimorfismo
+
+- Java (JDK 17.0.12)
 
 Ao longo do semestre serei exposto a novos conhecimentos a respeito do paradigma de POO e consequentemente adicionando 
 novas funcionalidades ao projeto.
