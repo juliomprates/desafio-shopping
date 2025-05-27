@@ -28,6 +28,7 @@ public class Vestuario extends Loja {
     }
 
     public String toString(){
-        return super.toString()+"\nVende produtos Importados? "+ temProdutosImportados();
+        return super.toString()+
+                "\nVende produtos importados: " + temProdutosImportados();
     }
 }
