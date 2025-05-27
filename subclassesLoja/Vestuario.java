@@ -19,9 +19,8 @@ public class Vestuario extends Loja {
         this.produtosImportados = produtosImportados;
     }
 
-    public String isProdutosImportados() {
-        if (produtosImportados == true) return "Sim";
-        return "Não";
+    public String temProdutosImportados() {
+        return produtosImportados ? "Sim" : "Não";
     }
 
     public void setProdutosImportados(boolean produtosImportados) {
@@ -29,6 +28,6 @@ public class Vestuario extends Loja {
     }
 
     public String toString(){
-        return super.toString()+"\nVende produtos Importados? "+isProdutosImportados();
+        return super.toString()+"\nVende produtos Importados? "+ temProdutosImportados();
     }
 }
