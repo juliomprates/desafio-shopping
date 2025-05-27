@@ -80,6 +80,19 @@ public class Loja {
         return false;
     }
 
+    public boolean removeProduto(String nomeProduto) {
+        for (int i = 0; i < estoqueProdutos.length; i++) {
+            if (estoqueProdutos[i] != null) {
+                if (estoqueProdutos[i].getNome().equalsIgnoreCase(nomeProduto)) {
+                    estoqueProdutos[i] = null;
+                    return true;
+                }
+            }
+        }
+
+        return false;
+    }
+
     public String toString (){
         return "\nNome: "+nome+"\nQuantidade de Funcionários: "+ quantidadeFuncionario +
                 "\nSalário Base dos Funcionários: "+salarioBaseFuncionario+"\n"+
