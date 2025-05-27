@@ -69,6 +69,17 @@ public class Loja {
         this.dataDeFundacao = dataDeFundacao;
     }
 
+    public boolean insereProduto(Produto novoProduto) {
+        for (int i = 0; i < estoqueProdutos.length; i++) {
+            if (estoqueProdutos[i] == null) {
+                estoqueProdutos[i] = novoProduto;
+                return true;
+            }
+        }
+
+        return false;
+    }
+
     public String toString (){
         return "\nNome: "+nome+"\nQuantidade de Funcionários: "+ quantidadeFuncionario +
                 "\nSalário Base dos Funcionários: "+salarioBaseFuncionario+"\n"+
