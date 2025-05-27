@@ -34,7 +34,6 @@ public class Main {
                 System.out.println("-----------------------------------");
                 Loja novaLoja;
 
-                // atributos do objeto da classe Loja
                 String nome;
                 int qtdDeFuncionarios;
                 double salarioBaseFuncionario;
@@ -50,8 +49,6 @@ public class Main {
                 System.out.print("Salário base dos funcionários: ");
                 salarioBaseFuncionario = Double.parseDouble(teclado.nextLine());
 
-
-                // atributos do objeto da classe Endereco
                 System.out.print("\nInforme o endereço da Loja");
                 String rua, cidade, estado, pais, cep, numero, complemento;
 
@@ -78,7 +75,6 @@ public class Main {
 
                 endereco = new Endereco(rua, cidade, estado, pais, cep, numero, complemento);
 
-                // atributos do objeto da classe Data
                 System.out.println("\nInforme a data de fundação da Loja");
                 int dia, mes, ano;
 
@@ -93,7 +89,6 @@ public class Main {
 
                 dataDeFundacao = new Data(dia, mes, ano);
 
-                // construção do objeto da classe Loja
                 novaLoja = new Loja(nome, qtdDeFuncionarios, salarioBaseFuncionario, endereco, dataDeFundacao);
                 System.out.println("\nLoja criada com sucesso!");
                 System.out.println("-----------------------------------");
@@ -107,7 +102,6 @@ public class Main {
                 System.out.println("-----------------------------------");
                 Produto novoProduto;
 
-                // atributos do objeto da classe Produto
                 String nome;
                 double preco;
                 Data validade;
@@ -118,7 +112,6 @@ public class Main {
                 System.out.print("Preço: ");
                 preco = Double.parseDouble(teclado.nextLine());
 
-                // atributos do objeto da classe Data
                 System.out.print("\nInforme a validade do produto");
                 int dia, mes, ano;
 
@@ -133,13 +126,13 @@ public class Main {
 
                 validade = new Data(dia, mes, ano);
 
-                // construção do objeto da classe Produto
                 novoProduto = new Produto(nome, preco, validade);
                 System.out.println("\nProduto criado com sucesso!");
                 System.out.println("-----------------------------------");
                 System.out.println("\tInformações do Produto\n");
                 System.out.println(novoProduto);
-                // dia atual como parâmetro para checar se o produto está na validade
+
+                // dia atual adicionado manualmente
                 if (novoProduto.estaVencido(new Data(9, 4, 2025))) {
                     System.out.println("\n\tPRODUTO VENCIDO");
                 } else {
