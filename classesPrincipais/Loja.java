@@ -18,7 +18,8 @@ public class Loja {
         this.estoqueProdutos = new Produto[quantidadeMaxProdutos];
     }
 
-    public Loja (String nome, int quantidadeFuncionario, Endereco endereco, Data dataDeFundacao, int quantidadeMaxProdutos){
+    public Loja (String nome, int quantidadeFuncionario, Endereco endereco,
+                 Data dataDeFundacao, int quantidadeMaxProdutos){
         this.nome = nome;
         this.quantidadeFuncionario = quantidadeFuncionario;
         this.salarioBaseFuncionario = -1;
