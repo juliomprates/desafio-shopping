@@ -66,7 +66,7 @@ public class Data {
 
         // verifica se o mês pode receber o dia 31
         // se não puder, atribui uma data padrão
-        if (diaValido && mesValido) {  // true true
+        if (diaValido && mesValido) {
             if (dia == 31) { // true
                 if ((mes == 2) || (mes == 4) || (mes == 6) || (mes == 9) || (mes == 11)) {
                     /*  Data Padrão */
@@ -87,7 +87,7 @@ public class Data {
             }
 
         }
-        
+
     }
 
     // getters
