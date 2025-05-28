@@ -11,7 +11,6 @@ public class Produto {
         this.validade = validade;
     }
 
-    // getters
     public String getNome() {
         return nome;
     }
@@ -24,7 +23,6 @@ public class Produto {
         return validade;
     }
 
-    //setters
     public void setNome(String nome) {
         this.nome = nome;
     }
