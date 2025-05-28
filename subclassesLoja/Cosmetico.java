@@ -11,7 +11,8 @@ public class Cosmetico extends Loja {
         this.setTaxaComercializacao(-1);
     }
 
-    public Cosmetico(String nome, int quantidadeFuncionario, Endereco endereco, Data dataDeFundacao, int quantidadeMaxProdutos){
+    public Cosmetico(String nome, int quantidadeFuncionario, Endereco endereco,
+                     Data dataDeFundacao, int quantidadeMaxProdutos){
         super(nome, quantidadeFuncionario, endereco, dataDeFundacao, quantidadeMaxProdutos);
         this.setSalarioBaseFuncionario(-1);
         this.setTaxaComercializacao(-1);
